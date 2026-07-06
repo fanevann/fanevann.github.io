@@ -212,35 +212,6 @@
   .btn-ghost:hover{ border-color: var(--teal); color: var(--teal); transform: translateY(-2px); }
 
   /* ---------- CONTAINER STACK ILLUSTRATION ---------- */
-  .stack-wrap{
-    position:relative;
-    height: 380px;
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-  }
-  .container-block{
-    position:absolute;
-    border-radius: 10px;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap: 4px;
-    font-family:'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 500;
-    color: rgba(20,20,43,0.85);
-    background-repeat: repeat-y;
-    transition: transform .25s ease;
-  }
-  .container-block:hover{ transform: translateY(-6px) scale(1.02); }
-  .c1{ width:200px; height:70px; background:var(--coral); left:10px; bottom:0; transform: rotate(-3deg); z-index:4;}
-  .c2{ width:180px; height:64px; background:var(--yellow); right:0; bottom:18px; transform: rotate(4deg); z-index:3;}
-  .c3{ width:210px; height:72px; background:var(--teal); left:40px; bottom:96px; transform: rotate(-2deg); z-index:2;}
-  .c4{ width:170px; height:60px; background:var(--violet); right:20px; bottom:172px; transform: rotate(3deg); z-index:1;}
-  .c5{ width:150px; height:56px; background:#EDEDED; left:70px; bottom:246px; transform: rotate(-4deg); z-index:0; color:#14142B;}
-
   /* ---------- SECTION HEADINGS ---------- */
   section{ padding: 88px 0; }
   .section-head{ margin-bottom: 48px; }
@@ -455,13 +426,6 @@
         <a class="btn btn-primary" href="#projects">Voir mes projets</a>
         <a class="btn btn-ghost" href="#contact">Me contacter</a>
       </div>
-    <div class="stack-wrap" aria-hidden="true">
-      <div class="container-block c5"><i data-lucide="code-2" class="w-4 h-4"></i>&nbsp;HTML</div>
-      <div class="container-block c4"><i data-lucide="palette" class="w-4 h-4"></i>&nbsp;CSS</div>
-      <div class="container-block c3"><i data-lucide="smartphone" class="w-4 h-4"></i>&nbsp;Flutter</div>
-      <div class="container-block c2"><i data-lucide="container" class="w-4 h-4"></i>&nbsp;Docker</div>
-      <div class="container-block c1"><i data-lucide="git-branch" class="w-4 h-4"></i>&nbsp;Git</div>
-    </div>
   </div>
 </header>
 
@@ -550,6 +514,7 @@
       <h2>Ce que j'ai construit</h2>
     </div>
     <div class="projects-grid">
+
       <div class="project-card">
         <span class="date">ASept. – Nov. 2024 · Stage</span>
         <h3>Gestion des stocks — SNut</h3>
@@ -558,6 +523,7 @@
           <span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">MySQL</span>
         </div>
       </div>
+
       <div class="project-card">
         <span class="date">Mai – Juin 2025</span>
         <h3>Scanner de factures</h3>
@@ -566,9 +532,8 @@
           <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Android Studio</span>
         </div>
       </div>
-      
       <div class="project-card">
-        <span class="date">Sept. – Nov. 2025 · Stage</span>
+        <span class="date">Sept. – Nov. 2024 · Stage</span>
         <h3>Plateforme magistrats ↔ établissements pénitentiaires</h3>
         <p>Conception et réalisation d'une plateforme de communication entre magistrats et établissements pénitentiaires, développée et conteneurisée durant un stage.</p>
         <div class="tag-row">
